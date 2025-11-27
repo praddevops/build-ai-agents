@@ -1,0 +1,1 @@
+This folder contain python code examples useful as refreshers
