@@ -1,6 +1,6 @@
 from langchain_ollama.llms import OllamaLLM
 from langchain_core.prompts import ChatPromptTemplate, SystemMessagePromptTemplate, HumanMessagePromptTemplate
-
+from vector import retriever
 model = OllamaLLM(model="llama3.2")
 
 # Step 1: Define the system and human message templates
@@ -27,7 +27,12 @@ while True:
    if question == 'q':
       print("quitting..\n")
       break
-   formatted_prompt = chat_prompt.format(reviews=[], question=question)
+
+   # retriever embeds the question and 
+   # will look up the vector store for relevant reviews, using similarity search algorithm,
+   # and returns the top results (return result count specified in the retriever implementation)
+   reviews = retriever.invoke(question) 
+   formatted_prompt = chat_prompt.format(reviews=reviews, question=question)
 
    # Step 5: Invoke the model
    result = model.invoke(formatted_prompt)

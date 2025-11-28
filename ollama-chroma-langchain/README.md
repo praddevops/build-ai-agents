@@ -50,3 +50,8 @@ https://docs.ollama.com/integrations/vscode
 https://docs.ollama.com/cli
 https://docs.ollama.com/linux
 
+
+
+## Credits
+# Credits for Restaurant reviews data file and embedding model code ([realistic_restaurant_reviews.csv](realistic_restaurant_reviews.csv)): [techwithtim](https://github.com/techwithtim/LocalAIAgentWithRAG/blob/main/realistic_restaurant_reviews.csv)
+

@@ -30,3 +30,4 @@ When designing chat prompt templates, understanding the distinction between user
 References:
 https://langchain-doc.readthedocs.io/en/latest/getting_started/getting_started.html
 https://lagnchain.readthedocs.io/en/stable/modules/prompts/chat_prompt_template.html
+https://docs.trychroma.com/docs/overview/getting-started
